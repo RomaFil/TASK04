@@ -1,0 +1,36 @@
+### hostinfo_native analysed on pi5 (aarch64), 2026-09-29T15:28:22+03:00
+## file
+build/hostinfo_native: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=c5d6fcc82cf20023ca0e616cf945af2c7bdf3c32, for GNU/Linux 3.7.0, not stripped
+## size on disk
+70968 bytes
+## readelf -h
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           AArch64
+## interpreter
+      [Requesting program interpreter: /lib/ld-linux-aarch64.so.1]
+## NEEDED
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+## ldd
+	linux-vdso.so.1 (0x00007fffb7618000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x00007fffb73d0000)
+	/lib/ld-linux-aarch64.so.1 (0x00007fffb75e0000)
+## size
+   text	   data	    bss	    dec	    hex	filename
+   3076	    704	      8	   3788	    ecc	build/hostinfo_native
+## GLIBC required
+GLIBC_2.17
+GLIBC_2.34
+## strings: total
+105
+## strings: GCC/GLIBC
+abort@GLIBC_2.17
+__cxa_finalize@GLIBC_2.17
+fclose@GLIBC_2.17
+fopen@GLIBC_2.17
+fprintf@GLIBC_2.17
+fwrite@GLIBC_2.17
+GCC: (Debian 14.2.0-19) 14.2.0
+GLIBC_2.17
+GLIBC_2.34
+__libc_start_main@GLIBC_2.34
