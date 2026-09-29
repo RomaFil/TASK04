@@ -1,0 +1,38 @@
+### hostinfo_native analysed on Roman (x86_64), 2026-09-29T12:08:41+00:00
+## file
+build/hostinfo_native: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=53ae24a60543fb0936b255a41e06699eafb9848c, for GNU/Linux 3.2.0, not stripped
+## size on disk
+16456 bytes
+## readelf -h
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+## interpreter
+      [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+## NEEDED
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+## ldd
+	linux-vdso.so.1 (0x00007cd9f6775000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007cd9f6400000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007cd9f6777000)
+## size
+   text	   data	    bss	    dec	    hex	filename
+   3080	    664	     48	   3792	    ed0	build/hostinfo_native
+## GLIBC required
+GLIBC_2.2.5
+GLIBC_2.3.4
+GLIBC_2.4
+GLIBC_2.34
+## strings: total
+107
+## strings: GCC/GLIBC
+GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+GLIBC_2.2.5
+GLIBC_2.3.4
+GLIBC_2.34
+GLIBC_2.4
+__cxa_finalize@GLIBC_2.2.5
+__fprintf_chk@GLIBC_2.3.4
+__libc_start_main@GLIBC_2.34
+__stack_chk_fail@GLIBC_2.4
+fclose@GLIBC_2.2.5

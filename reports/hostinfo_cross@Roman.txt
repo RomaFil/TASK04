@@ -1,0 +1,35 @@
+### hostinfo_cross analysed on Roman (x86_64), 2026-09-29T12:09:39+00:00
+## file
+build/hostinfo_cross: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=6b89f56f56e6460c79c863b78e000488d87fa32f, for GNU/Linux 3.7.0, not stripped
+## size on disk
+70992 bytes
+## readelf -h
+  Class:                             ELF64
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           AArch64
+## interpreter
+      [Requesting program interpreter: /lib/ld-linux-aarch64.so.1]
+## NEEDED
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-aarch64.so.1]
+## ldd
+	not a dynamic executable
+## size
+   text	   data	    bss	    dec	    hex	filename
+   3270	    744	      8	   4022	    fb6	build/hostinfo_cross
+## GLIBC required
+GLIBC_2.17
+GLIBC_2.34
+## strings: total
+110
+## strings: GCC/GLIBC
+GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+GLIBC_2.17
+GLIBC_2.34
+__cxa_finalize@GLIBC_2.17
+__fprintf_chk@GLIBC_2.17
+__libc_start_main@GLIBC_2.34
+__stack_chk_fail@GLIBC_2.17
+__stack_chk_guard@GLIBC_2.17
+abort@GLIBC_2.17
+fclose@GLIBC_2.17
