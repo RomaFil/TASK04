@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-CROSS=${CROSS:-}                    
+CROSS=${CROSS:-}
 CC=${CROSS}gcc
 CFLAGS="-std=c11 -Wall -Wextra -Werror -O2"
 OUT=${OUT:-hostinfo_static}

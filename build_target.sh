@@ -7,4 +7,4 @@ OUT=${OUT:-hostinfo_cross}
 mkdir -p build reports
 
 $CC $CFLAGS hostinfo.c -o build/$OUT
-CROSS=$CROSS ./analyze.sh build/$OUT     
+CROSS=$CROSS ./analyze.sh build/$OUT
