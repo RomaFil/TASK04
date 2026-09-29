@@ -13,7 +13,7 @@ mkdir -p reports
   echo "## NEEDED";            ${CROSS}readelf -d "$BIN" | grep -E 'NEEDED|RUNPATH' || echo "none"
   echo "## ldd";               ldd "$BIN" 2>&1 || true
   echo "## size";              ${CROSS}size "$BIN"
-  echo "## GLIBC required";    ${CROSS}objdump -T "$BIN" | grep -o 'GLIBC_[0-9.]*' | sort -uV
+  echo "## GLIBC required";    ${CROSS}objdump -T "$BIN" 2>/dev/null | grep -o "GLIBC_[0-9.]*" | sort -uV || true
   echo "## strings: total";    ${CROSS}strings "$BIN" | wc -l
   echo "## strings: GCC/GLIBC"; ${CROSS}strings "$BIN" | grep -E 'GCC:|GLIBC' | sort -u | head
 } | tee "$OUTF"

@@ -7,5 +7,5 @@ OUT=${OUT:-hostinfo_static}
 mkdir -p build reports
 
 $CC $CFLAGS -static hostinfo.c -o build/$OUT
-[ -z "$CROSS" ] && ./build/$OUT build/t_static.txt
+if [ -z "$CROSS" ]; then ./build/$OUT build/t_static.txt; fi
 CROSS=$CROSS ./analyze.sh build/$OUT
