@@ -1,0 +1,29 @@
+### hostinfo_static analysed on Roman (x86_64), 2026-09-29T12:32:11+00:00
+## file
+build/hostinfo_static: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=9c0b2ed85f04eff642076123e3a0636b867ff687, for GNU/Linux 3.2.0, not stripped
+## size on disk
+1039424 bytes
+## readelf -h
+  Class:                             ELF64
+  Type:                              EXEC (Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+## interpreter
+none
+## NEEDED
+none
+## ldd
+	not a dynamic executable
+## size
+   text	   data	    bss	    dec	    hex	filename
+ 906040	  24608	  22912	 953560	  e8cd8	build/hostinfo_static
+## GLIBC required
+## strings: total
+6138
+## strings: GCC/GLIBC
+DT_RELR without GLIBC_ABI_DT_RELR dependency
+GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+GLIBC_ABI_DT_RELR
+GLIBC_PRIVATE
+GLIBC_TUNABLES
+WARNING: ld.so: invalid GLIBC_TUNABLES `%s': ignored.
+WARNING: ld.so: invalid GLIBC_TUNABLES value `%.*s' for option `%s': ignored.

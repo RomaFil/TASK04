@@ -1,0 +1,29 @@
+### hostinfo_static_cross analysed on pi5 (aarch64), 2026-09-29T15:32:29+03:00
+## file
+hostinfo_static_cross: ELF 64-bit LSB executable, ARM aarch64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=2b6413a71c10c8eed3c47042740ba30e33c3342c, for GNU/Linux 3.7.0, not stripped
+## size on disk
+849536 bytes
+## readelf -h
+  Class:                             ELF64
+  Type:                              EXEC (Executable file)
+  Machine:                           AArch64
+## interpreter
+none
+## NEEDED
+none
+## ldd
+	not a dynamic executable
+## size
+   text	   data	    bss	    dec	    hex	filename
+ 676557	  23372	  22096	 722025	  b0469	hostinfo_static_cross
+## GLIBC required
+## strings: total
+4575
+## strings: GCC/GLIBC
+DT_RELR without GLIBC_ABI_DT_RELR dependency
+GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+GLIBC_ABI_DT_RELR
+GLIBC_PRIVATE
+GLIBC_TUNABLES
+WARNING: ld.so: invalid GLIBC_TUNABLES `%s': ignored.
+WARNING: ld.so: invalid GLIBC_TUNABLES value `%.*s' for option `%s': ignored.
